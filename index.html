@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=pt "br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skibiribop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="titulozao">Hello, World!</h1>
+    <p class="titulozinho">
+    <h3 class="paragrafozinho">
+        Já me livrei da maldição dos programadores
+    </h3>
+    </p>
+    <hr size="10" color="black">
+    <hr size="5" color="black">
+    <hr size="-3" color="black"><br><br>
+
+    <center>
+        <div class="firstmusic">
+            <img imagenzinhas src="https://mobimg.b-cdn.net/v3/fetch/82/82d68300caa63d85b4dedbbdcef80390.jpeg" alt="aa">
+            <br>
+            <h2>MEUS MANO FAZ DINHEIRO DEMAIS</h2>
+            <audio id="audiozinho1" controls="controls">
+                <source src="dinheirodemais.mp3" type="audio/mp3" />
+            </audio>
+        </div>
+
+        <div class="firstmusic">
+            <img class="imagenzinhas"
+                src="https://i9.ytimg.com/s_p/OLAK5uy_lL2PST--qGDqj4rcCMHH_444AL5F5PMbI/sddefault.jpg?sqp=CNz85aEGir7X7AMGCISA3aEG&rs=AOn4CLA-Mo1HRrpl49xhGiHvC5SKMHI2qA&v=1681342468"
+                alt="aa">
+            <br>
+            <h2>CHAMO ELAS DE TASHA E TRACIE</h2>
+            <audio id="audiozinho2" controls="controls">
+                <source src="morro.mp3" type="audio/mp3" />
+            </audio>
+        </div>
+
+
+    </center>
+    <script>
+           var audios = document.getElementsByTagName("audio");
+
+for (var i = 0; i < audios.length; i++) {
+    audios[i].addEventListener("play", function() {
+        for (var j = 0; j < audios.length; j++) {
+            if (audios[j] !== this && !audios[j].paused) {
+                audios[j].pause();
+                audios[j].currentTime = 0;
+            }
+        }
+    });
+}
+    </script>
+</body>
+
+</html>

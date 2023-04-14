@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: khaki;
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+}
+
+.titulozao{
+    width: 30%;
+    margin-left: 5vh;
+}
+
+
+.titulozao:hover{
+    color: rgb(252, 7, 203);
+}
+
+.paragrafozinho{
+    color: rgb(47, 115, 115);
+    margin-left: 7vh;
+
+}
+
+img{
+    width: 500px;
+}
+
+audio{
+    border: black solid 3px;
+    width: 500px;
+    border-radius: 30px;
+	background: #a31;
+}
+
+#audiozinho{
+    background-color: #a31;
+    
+}
+
+
+
+audio::-webkit-media-controls-panel {
+    background-color: #acec0aa9;
+  }
+  
+  audio::-webkit-media-controls-play-button {
+    background-color: #acec0aa9;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(52, 108, 63, 0.7);
+  }
+
+  .firstmusic{
+    border: solid 1px black;
+    width: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    border-radius: 40px;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagenzinhas{
+    max-height: 60vh;
+    width: auto;
+  }
+
